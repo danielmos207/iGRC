@@ -297,6 +297,50 @@ public class ApplicationInitializationComp {
 			parameter26.setLanguage("EN");
 			parameterService.save(parameter26);			
 			
+			Parameter parameter27 = new Parameter();
+			parameter27.setParatype("defenseline");
+			parameter27.setParamid("defline00");
+			parameter27.setName("--- Unspecified");
+			parameter27.setDescription("Empty value");
+			parameter27.setKind("Combo value");
+			parameter27.setVisible(true);
+			parameter27.setEnabled(true);
+			parameter27.setLanguage("EN");
+			parameterService.save(parameter27);			
+			
+			Parameter parameter28 = new Parameter();
+			parameter28.setParatype("defenseline");
+			parameter28.setParamid("defline01");
+			parameter28.setName("First Defense Line (Owners)");
+			parameter28.setDescription("");
+			parameter28.setKind("Combo value");
+			parameter28.setVisible(true);
+			parameter28.setEnabled(true);
+			parameter28.setLanguage("EN");
+			parameterService.save(parameter28);			
+			
+			Parameter parameter29 = new Parameter();
+			parameter29.setParatype("defenseline");
+			parameter29.setParamid("defline02");
+			parameter29.setName("Second Defense Line (Internal Compliance)");
+			parameter29.setDescription("");
+			parameter29.setKind("Combo value");
+			parameter29.setVisible(true);
+			parameter29.setEnabled(true);
+			parameter29.setLanguage("EN");
+			parameterService.save(parameter29);			
+
+			Parameter parameter30 = new Parameter();
+			parameter30.setParatype("defenseline");
+			parameter30.setParamid("defline03");
+			parameter30.setName("Third Defense Line (Internal/External Audit)");
+			parameter30.setDescription("");
+			parameter30.setKind("Combo value");
+			parameter30.setVisible(true);
+			parameter30.setEnabled(true);
+			parameter30.setLanguage("EN");
+			parameterService.save(parameter30);			
+			
 			
 			
 			

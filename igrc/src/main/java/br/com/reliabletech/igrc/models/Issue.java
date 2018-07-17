@@ -45,23 +45,28 @@ public class Issue {
 	
 	private String processAssigned;
 	
-	private String systemAfected;
+	private String systemAffected;
 	
 	private String rootCause;
 	
 	private String issueStatus;
 	
+	@Lob
 	private String situationFound;
 	
 	private Boolean recurrent;
 	
+	@Lob
 	private String obsCreator;
 	
+	@Lob
 	private String obsReviewer;
 	
+	@Lob
 	private String obsOwner;
 	
-	private String recomendation;
+	@Lob
+	private String recommendation;
 	
 	private Boolean replanned;
 	
@@ -92,6 +97,25 @@ public class Issue {
 	@ManyToOne(targetEntity = Control.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
 	private Control control;
 	
+	
+	
+	
+	public String getSystemAffected() {
+		return systemAffected;
+	}
+
+	public void setSystemAffected(String systemAffected) {
+		this.systemAffected = systemAffected;
+	}
+
+	public String getRecommendation() {
+		return recommendation;
+	}
+
+	public void setRecommendation(String recommendation) {
+		this.recommendation = recommendation;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -189,11 +213,11 @@ public class Issue {
 	}
 
 	public String getSystemAfected() {
-		return systemAfected;
+		return systemAffected;
 	}
 
 	public void setSystemAfected(String systemAfected) {
-		this.systemAfected = systemAfected;
+		this.systemAffected = systemAfected;
 	}
 
 	public String getRootCause() {
@@ -253,11 +277,11 @@ public class Issue {
 	}
 
 	public String getRecomendation() {
-		return recomendation;
+		return recommendation;
 	}
 
 	public void setRecomendation(String recomendation) {
-		this.recomendation = recomendation;
+		this.recommendation = recomendation;
 	}
 
 	public Boolean getReplanned() {

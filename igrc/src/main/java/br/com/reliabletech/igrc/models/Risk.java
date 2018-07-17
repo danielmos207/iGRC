@@ -41,7 +41,7 @@ public class Risk {
 	
 	private String rule;
 	
-	private String riskcateg;
+	private String riskCateg;
 
 	private Integer probability;	
 	
@@ -69,7 +69,7 @@ public class Risk {
 	private Boolean asserComplete; 
 	private Boolean asserOblgRight; 
 	private Boolean asserEvaluation; 
-	private Boolean asserDisclousure; 
+	private Boolean asserDisclosure; 
 	private Boolean asserNA; 
 	
 	private String documents;	
@@ -118,12 +118,6 @@ public class Risk {
 	}
 	public void setRule(String rule) {
 		this.rule = rule;
-	}
-	public String getRiskcateg() {
-		return riskcateg;
-	}
-	public void setRiskcateg(String riskcateg) {
-		this.riskcateg = riskcateg;
 	}
 	public List<Issue> getIssues() {
 		return issues;
@@ -270,11 +264,11 @@ public class Risk {
 	public void setAsserEvaluation(Boolean asserEvaluation) {
 		this.asserEvaluation = asserEvaluation;
 	}
-	public Boolean getAsserDisclousure() {
-		return asserDisclousure;
+	public Boolean getAsserDisclosure() {
+		return asserDisclosure;
 	}
-	public void setAsserDisclousure(Boolean asserDisclousure) {
-		this.asserDisclousure = asserDisclousure;
+	public void setAsserDisclosure(Boolean asserDisclosure) {
+		this.asserDisclosure = asserDisclosure;
 	}
 	public Boolean getAsserNA() {
 		return asserNA;
@@ -282,5 +276,12 @@ public class Risk {
 	public void setAsserNA(Boolean asserNA) {
 		this.asserNA = asserNA;
 	}
+	public String getRiskCateg() {
+		return riskCateg;
+	}
+	public void setRiskCateg(String riskCateg) {
+		this.riskCateg = riskCateg;
+	}
+	
 	
 }

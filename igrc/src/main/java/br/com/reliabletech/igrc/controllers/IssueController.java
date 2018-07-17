@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.reliabletech.igrc.models.Issue;
+import br.com.reliabletech.igrc.models.Parameter;
 import br.com.reliabletech.igrc.services.IssueService;
 import br.com.reliabletech.igrc.services.ParameterService;
 
@@ -25,6 +26,9 @@ public class IssueController {
 	@RequestMapping(value="", method=RequestMethod.GET)
 	public String issueForm(Issue issue, Model model){
 
+		List<Parameter> defenseLines = parameterService.findByParatype("defenseline");
+		model.addAttribute("defenseLines", defenseLines);
+		
 		return "issue";
 	}
 	

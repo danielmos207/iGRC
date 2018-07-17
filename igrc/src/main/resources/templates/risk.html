@@ -32,45 +32,73 @@
 							<input type="text" th:field="*{name}" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="name">Risk Description</label>
+							<label for="description">Risk Description</label>
 							<textarea cols="20" th:field="*{description}" class="form-control"></textarea>	
 						</div>
 						<div class="form-group">
-							<label for="name">Risk Cause</label>
+							<label for="cause">Risk Cause</label>
 							<textarea cols="20" th:field="*{cause}" class="form-control"></textarea>	
 						</div>
 						<div class="form-group">
-							<label for="name">Risk Consequence</label>
+							<label for="consequence">Risk Consequence</label>
 							<textarea cols="20" th:field="*{consequence}" class="form-control"></textarea>	
 						</div>
 						<div class="form-group">
-							<label for="name">Process Related</label>
+							<label for="process">Process Related</label>
 							<input type="text" th:field="*{process}" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="name">Rule Related</label>
+							<label for="rule">Rule Related</label>
 							<input type="text" th:field="*{rule}" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="name">Risk Category</label>
-							<input type="text" th:field="*{riskcateg}" class="form-control">
+							<label for="riskCateg">Risk Category</label>
+							<input type="text" th:field="*{riskCateg}" class="form-control">
 						</div>
 						<div class="form-group">
-							<label for="name">Risk Manager</label>
-							<input type="text" th:field="*{riskmanager}" class="form-control">
+							<label for="riskManager">Risk Manager</label>
+							<input type="text" th:field="*{riskManager}" class="form-control">
 						</div>
 
 						<div class="form-group">
-							<label for="assessactiv">Assessment Activity</label>
-							<input type="text" th:field="*{assessactiv}" class="form-control">
+							<label for="assessActiv">Assessment Activity</label>
+							<input type="text" th:field="*{assessActiv}" class="form-control">
 						</div>						
 						
 						<div class="form-group">
-						  <label for="assessfreq">Assessment Frequency</label>
-						  <select class="form-control" th:field="*{assessfreq}">
+						  <label for="assessFreq">Assessment Frequency</label>
+						  <select class="form-control" th:field="*{assessFreq}">
 						    <option th:each="stdFreq : ${stdFreqs}" value="${stdFreq.paramid}" th:utext="${stdFreq.name}">
 						  </select>
 						</div>
+						
+						<div class="form-group">
+						  <label>Risk Type:</label>	<br>					
+							<label class="checkbox-inline">Finance Report </label>
+							<input type="checkbox" value=false th:field="*{rtFinReport}">
+							<label class="checkbox-inline">&nbsp Compliance </label>
+							<input type="checkbox" value=false th:field="*{rtCompliance}">
+							<label class="checkbox-inline">&nbsp Operations </label>
+							<input type="checkbox" value=false th:field="*{rtOperations}">
+							<label class="checkbox-inline">&nbsp Strategic </label>
+							<input type="checkbox" value=false th:field="*{rtStrategic}">
+						</div>
+						<div class="form-group">
+							<label>Assertions:</label>	<br>
+							<label class="checkbox-inline">Existence or Occurrence</label>
+							<input type="checkbox" value=false th:field="*{asserExistOcc}">
+							<label class="checkbox-inline">&nbsp Completeness </label>
+							<input type="checkbox" value=false th:field="*{asserComplete}">
+							<label class="checkbox-inline">&nbsp Rights and Obligations </label>
+							<input type="checkbox" value=false th:field="*{asserOblgRight}"> <br>
+							<label class="checkbox-inline">Valuation and Allocation</label>
+							<input type="checkbox" value=false th:field="*{asserEvaluation}">
+							<label class="checkbox-inline">&nbsp Presentation and Disclosure </label>
+							<input type="checkbox" value=false th:field="*{asserDisclosure}">
+							<label class="checkbox-inline">&nbsp N/A </label>
+							<input type="checkbox" value=false th:field="*{asserNA}">
+						</div>						
+						
 						
 						<div class="form-group">
 							<label for="name">Documents</label>
