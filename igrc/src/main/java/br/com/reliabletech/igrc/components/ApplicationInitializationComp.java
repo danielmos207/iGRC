@@ -311,7 +311,7 @@ public class ApplicationInitializationComp {
 			Parameter parameter28 = new Parameter();
 			parameter28.setParatype("defenseline");
 			parameter28.setParamid("defline01");
-			parameter28.setName("First Defense Line (Owners)");
+			parameter28.setName("First Defense Line (Owner)");
 			parameter28.setDescription("");
 			parameter28.setKind("Combo value");
 			parameter28.setVisible(true);
