@@ -341,6 +341,192 @@ public class ApplicationInitializationComp {
 			parameter30.setLanguage("EN");
 			parameterService.save(parameter30);			
 			
+			Parameter parameter31 = new Parameter();
+			parameter31.setParatype("probab");
+			parameter31.setParamid("probab00");
+			parameter31.setName("--- Unspecified");
+			parameter31.setDescription("Empty value");
+			parameter31.setKind("Combo value");
+			parameter31.setVisible(true);
+			parameter31.setEnabled(true);
+			parameter31.setLanguage("EN");
+			parameterService.save(parameter31);			
+			
+			Parameter parameter32 = new Parameter();
+			parameter32.setParatype("probab");
+			parameter32.setParamid("probab01");
+			parameter32.setName("Rare/Remote");
+			parameter32.setDescription("");
+			parameter32.setKind("Combo value");
+			parameter32.setVisible(true);
+			parameter32.setEnabled(true);
+			parameter32.setLanguage("EN");
+			parameterService.save(parameter32);			
+			
+			Parameter parameter33 = new Parameter();
+			parameter33.setParatype("probab");
+			parameter33.setParamid("probab02");
+			parameter33.setName("Moderate");
+			parameter33.setDescription("");
+			parameter33.setKind("Combo value");
+			parameter33.setVisible(true);
+			parameter33.setEnabled(true);
+			parameter33.setLanguage("EN");
+			parameterService.save(parameter33);			
+			
+			Parameter parameter34 = new Parameter();
+			parameter34.setParatype("probab");
+			parameter34.setParamid("probab03");
+			parameter34.setName("Likely");
+			parameter34.setDescription("");
+			parameter34.setKind("Combo value");
+			parameter34.setVisible(true);
+			parameter34.setEnabled(true);
+			parameter34.setLanguage("EN");
+			parameterService.save(parameter34);			
+			
+			Parameter parameter35 = new Parameter();
+			parameter35.setParatype("probab");
+			parameter35.setParamid("probab04");
+			parameter35.setName("Almost Certain");
+			parameter35.setDescription("");
+			parameter35.setKind("Combo value");
+			parameter35.setVisible(true);
+			parameter35.setEnabled(true);
+			parameter35.setLanguage("EN");
+			parameterService.save(parameter35);			
+			
+			Parameter parameter36 = new Parameter();
+			parameter36.setParatype("qldamage");
+			parameter36.setParamid("qldamage00");
+			parameter36.setName("--- Unspecified");
+			parameter36.setDescription("Empty value");
+			parameter36.setKind("Combo value");
+			parameter36.setVisible(true);
+			parameter36.setEnabled(true);
+			parameter36.setLanguage("EN");
+			parameterService.save(parameter36);				
+			
+			Parameter parameter37 = new Parameter();
+			parameter37.setParatype("qldamage");
+			parameter37.setParamid("qldamage01");
+			parameter37.setName("Insignificant");
+			parameter37.setDescription("");
+			parameter37.setKind("Combo value");
+			parameter37.setVisible(true);
+			parameter37.setEnabled(true);
+			parameter37.setLanguage("EN");
+			parameterService.save(parameter37);			
+
+			Parameter parameter38 = new Parameter();
+			parameter38.setParatype("qldamage");
+			parameter38.setParamid("qldamage02");
+			parameter38.setName("Low");
+			parameter38.setDescription("");
+			parameter38.setKind("Combo value");
+			parameter38.setVisible(true);
+			parameter38.setEnabled(true);
+			parameter38.setLanguage("EN");
+			parameterService.save(parameter38);			
+			
+			Parameter parameter39 = new Parameter();
+			parameter39.setParatype("qldamage");
+			parameter39.setParamid("qldamage02");
+			parameter39.setName("Average");
+			parameter39.setDescription("");
+			parameter39.setKind("Combo value");
+			parameter39.setVisible(true);
+			parameter39.setEnabled(true);
+			parameter39.setLanguage("EN");
+			parameterService.save(parameter39);			
+			
+			Parameter parameter40 = new Parameter();
+			parameter40.setParatype("qldamage");
+			parameter40.setParamid("qldamage03");
+			parameter40.setName("High");
+			parameter40.setDescription("");
+			parameter40.setKind("Combo value");
+			parameter40.setVisible(true);
+			parameter40.setEnabled(true);
+			parameter40.setLanguage("EN");
+			parameterService.save(parameter40);			
+			
+			Parameter parameter41 = new Parameter();
+			parameter41.setParatype("qldamage");
+			parameter41.setParamid("qldamage04");
+			parameter41.setName("Catastrophic");
+			parameter41.setDescription("");
+			parameter41.setKind("Combo value");
+			parameter41.setVisible(true);
+			parameter41.setEnabled(true);
+			parameter41.setLanguage("EN");
+			parameterService.save(parameter41);			
+			
+			Parameter parameter42 = new Parameter();
+			parameter42.setParatype("trendopt");
+			parameter42.setParamid("trendopt00");
+			parameter42.setName("--- Unspecified");
+			parameter42.setDescription("Empty value");
+			parameter42.setKind("Combo value");
+			parameter42.setVisible(true);
+			parameter42.setEnabled(true);
+			parameter42.setLanguage("EN");
+			parameterService.save(parameter42);				
+			
+			Parameter parameter43 = new Parameter();
+			parameter43.setParatype("trendopt");
+			parameter43.setParamid("trendopt01");
+			parameter43.setName("Will be worst fast");
+			parameter43.setDescription("");
+			parameter43.setKind("Combo value");
+			parameter43.setVisible(true);
+			parameter43.setEnabled(true);
+			parameter43.setLanguage("EN");
+			parameterService.save(parameter43);			
+
+			Parameter parameter44 = new Parameter();
+			parameter44.setParatype("trendopt");
+			parameter44.setParamid("trendopt02");
+			parameter44.setName("Will be worst in short-term");
+			parameter44.setDescription("");
+			parameter44.setKind("Combo value");
+			parameter44.setVisible(true);
+			parameter44.setEnabled(true);
+			parameter44.setLanguage("EN");
+			parameterService.save(parameter44);			
+			
+			Parameter parameter45 = new Parameter();
+			parameter45.setParatype("trendopt");
+			parameter45.setParamid("trendopt03");
+			parameter45.setName("Will be worst in mid-term");
+			parameter45.setDescription("");
+			parameter45.setKind("Combo value");
+			parameter45.setVisible(true);
+			parameter45.setEnabled(true);
+			parameter45.setLanguage("EN");
+			parameterService.save(parameter45);			
+			
+			Parameter parameter46 = new Parameter();
+			parameter46.setParatype("trendopt");
+			parameter46.setParamid("trendopt04");
+			parameter46.setName("Will be worst in long-term");
+			parameter46.setDescription("");
+			parameter46.setKind("Combo value");
+			parameter46.setVisible(true);
+			parameter46.setEnabled(true);
+			parameter46.setLanguage("EN");
+			parameterService.save(parameter46);			
+			
+			Parameter parameter47 = new Parameter();
+			parameter47.setParatype("trendopt");
+			parameter47.setParamid("trendopt05");
+			parameter47.setName("Will not change");
+			parameter47.setDescription("");
+			parameter47.setKind("Combo value");
+			parameter47.setVisible(true);
+			parameter47.setEnabled(true);
+			parameter47.setLanguage("EN");
+			parameterService.save(parameter47);			
 			
 			
 			

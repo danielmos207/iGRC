@@ -28,19 +28,19 @@ public class RiskAssessment {
 	
 	private Integer qtOccFreq;
 	
-	private Integer qloccfreq;
+	private String qlProbability;
 	
+	private String trend;
+	
+	@Lob
+	private String obsOwner;
+	
+	private String documents;	
+	
+		
 	@ManyToOne(targetEntity = Risk.class, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
 	private Risk risk;
 	
-
-	public Integer getQloccfreq() {
-		return qloccfreq;
-	}
-
-	public void setQloccfreq(Integer qloccfreq) {
-		this.qloccfreq = qloccfreq;
-	}
 
 	public Long getId() {
 		return id;
@@ -96,6 +96,46 @@ public class RiskAssessment {
 
 	public void setQtOccFreq(Integer qtOccFreq) {
 		this.qtOccFreq = qtOccFreq;
+	}
+
+	public String getQlOccFreq() {
+		return getQlProbability();
+	}
+
+	public void setQlOccFreq(String qlOccFreq) {
+		this.setQlProbability(qlOccFreq);
+	}
+
+	public String getTrend() {
+		return trend;
+	}
+
+	public void setTrend(String trend) {
+		this.trend = trend;
+	}
+
+	public String getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(String documents) {
+		this.documents = documents;
+	}
+
+	public String getObsOwner() {
+		return obsOwner;
+	}
+
+	public void setObsOwner(String obsOwner) {
+		this.obsOwner = obsOwner;
+	}
+
+	public String getQlProbability() {
+		return qlProbability;
+	}
+
+	public void setQlProbability(String qlProbability) {
+		this.qlProbability = qlProbability;
 	}
 
 

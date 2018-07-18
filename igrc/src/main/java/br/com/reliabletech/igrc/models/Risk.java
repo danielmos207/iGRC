@@ -43,8 +43,6 @@ public class Risk {
 	
 	private String riskCateg;
 
-	private Integer probability;	
-	
 	@NotNull
 	private String riskManager;
 	
@@ -56,9 +54,9 @@ public class Risk {
 
 	private String resQLPotDamage;
 	
-	private Integer resQTOccFreq;
+	private Integer resQTOccFreq; //porcentagem
 	
-	private Integer resQLOccFreq; 
+	private String resQLProbability; 
 	
 	private Boolean rtFinReport;
 	private Boolean rtCompliance;
@@ -168,12 +166,7 @@ public class Risk {
 	public void setControls(List<Control> controls) {
 		this.controls = controls;
 	}
-	public Integer getProbability() {
-		return probability;
-	}
-	public void setProbability(Integer probability) {
-		this.probability = probability;
-	}
+
 	public BigDecimal getResQTPotDamage() {
 		return resQTPotDamage;
 	}
@@ -204,12 +197,7 @@ public class Risk {
 	public void setResQTOccFreq(Integer resQTOccFreq) {
 		this.resQTOccFreq = resQTOccFreq;
 	}
-	public Integer getResQLOccFreq() {
-		return resQLOccFreq;
-	}
-	public void setResQLOccFreq(Integer resQLOccFreq) {
-		this.resQLOccFreq = resQLOccFreq;
-	}
+
 	public String getRiskManager() {
 		return riskManager;
 	}
@@ -281,6 +269,12 @@ public class Risk {
 	}
 	public void setRiskCateg(String riskCateg) {
 		this.riskCateg = riskCateg;
+	}
+	public String getResQLPropability() {
+		return resQLProbability;
+	}
+	public void setResQLPropability(String resQLPropability) {
+		this.resQLProbability = resQLPropability;
 	}
 	
 	

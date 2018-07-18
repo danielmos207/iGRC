@@ -52,14 +52,6 @@ public class Control {
 	
 	private String documents;
 	
-	public String getDocuments() {
-		return documents;
-	}
-
-	public void setDocuments(String documents) {
-		this.documents = documents;
-	}
-
 	@ManyToMany(mappedBy="controls")
 	private List<Risk> risks = new ArrayList<Risk>();
 
@@ -227,6 +219,13 @@ public class Control {
 		this.controlassessment = controlassessment;
 	}
 
+	public String getDocuments() {
+		return documents;
+	}
+
+	public void setDocuments(String documents) {
+		this.documents = documents;
+	}
 	
 	
 }
